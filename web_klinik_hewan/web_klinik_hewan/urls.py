@@ -1,12 +1,5 @@
 from django.contrib import admin
 from django.urls import path, include
-<<<<<<< HEAD
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('fasilitas/', include('fasilitas.urls')),
-]
-=======
 from .views import home
 from .views import daftar_customer
 
@@ -20,4 +13,3 @@ urlpatterns = [
     path('pembayaran/', include('pembayaran.urls')),
     path('dashboard/', include('dashboard.urls')),
 ]
->>>>>>> d5e233f950cf16a2d73ad1936d3140764ae29bb7
