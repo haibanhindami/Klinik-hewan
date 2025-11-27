@@ -1,0 +1,9 @@
+<h1>Daftar Perawatan</h1>
+
+<ul>
+    {% for p in perawatans %}
+        <li>{{ p.nama }} - Durasi: {{ p.durasi }} menit - Harga: Rp{{ p.harga }}</li>
+    {% empty %}
+        <li>Belum ada perawatan.</li>
+    {% endfor %}
+</ul>

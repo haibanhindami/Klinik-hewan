@@ -26,6 +26,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
+    'fasilitas',
+=======
 
     'customer',
     'pemeriksaan',
@@ -33,6 +36,7 @@ INSTALLED_APPS = [
     'pegawai',
     'pembayaran',
     'dashboard',
+>>>>>>> d5e233f950cf16a2d73ad1936d3140764ae29bb7
 ]
 
 MIDDLEWARE = [
