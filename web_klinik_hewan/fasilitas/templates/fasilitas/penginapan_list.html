@@ -1,0 +1,15 @@
+<h1>Daftar Penginapan Hewan</h1>
+
+<ul>
+    {% for p in penginapans %}
+        <li>
+            {{ p.nama_hewan }} ({{ p.jenis_hewan }})<br>
+            Masuk: {{ p.tanggal_masuk }}<br>
+            Keluar: {{ p.tanggal_keluar|default:'Belum keluar' }}<br>
+            Harga per hari: Rp{{ p.harga_per_hari }}
+        </li>
+        <br>
+    {% empty %}
+        <li>Belum ada penginapan.</li>
+    {% endfor %}
+</ul>
