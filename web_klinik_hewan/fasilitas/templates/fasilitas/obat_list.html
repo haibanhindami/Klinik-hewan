@@ -1,0 +1,9 @@
+<h1>Daftar Obat</h1>
+
+<ul>
+    {% for obat in obats %}
+        <li>{{ obat.nama }} - Stok: {{ obat.stok }} - Harga: Rp{{ obat.harga }}</li>
+    {% empty %}
+        <li>Belum ada obat tersedia.</li>
+    {% endfor %}
+</ul>
