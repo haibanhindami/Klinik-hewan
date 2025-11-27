@@ -29,7 +29,7 @@ INSTALLED_APPS = [
 
     'customer',
     'pemeriksaan',
-    'fasilitas',
+    
     'pegawai',
     'pembayaran',
     'dashboard',
