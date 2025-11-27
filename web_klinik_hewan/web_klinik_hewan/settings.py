@@ -26,9 +26,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-    'fasilitas',
-=======
 
     'customer',
     'pemeriksaan',
@@ -36,7 +33,6 @@ INSTALLED_APPS = [
     'pegawai',
     'pembayaran',
     'dashboard',
->>>>>>> d5e233f950cf16a2d73ad1936d3140764ae29bb7
 ]
 
 MIDDLEWARE = [
@@ -54,6 +50,7 @@ ROOT_URLCONF = 'web_klinik_hewan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'manajemen_pemeriksaan' / 'templates'],
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
